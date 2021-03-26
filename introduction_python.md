@@ -19,7 +19,7 @@ La dernière version au moment ou nous parlons est la 3.9 (latest) mais elle est
 
 Les versions préférées pour leur stabilité (prod) sont la 3.7 ou la 3.6.
 
-La version 2.7 qui a été préférée pendant (très) longtemps par les développeur pour sa formidable stabilité est en déprécated et doit être évitée.
+La version 2.7 qui a été préférée pendant (très) longtemps par les développeur pour sa formidable stabilité est en deprecated et doit être évitée.
 
 Toutes ces version de python sont disponibles en téléchargement [ici](https://www.python.org/downloads/)  
 Pour Linux ces versions sont également disponibles sur les dépot apt, yum ...
