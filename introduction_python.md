@@ -5,13 +5,13 @@
 
 Python est un langage de programmation interprété (langage de script) multiplatforme.
 
-Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions.
+Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions.  
 Ses fonctionnalités haut niveau et sa syntaxe très simple en font un langage très facile a appréhender.
 
-Tous ces atouts font de lui un langage très populaires (3° place au moment ou nous parlons), surtout auprès des universitaires qu'ils l'on largement utilisé pour développer des outils dans le domaine de le la data science et de l'intelligence artificielle.
+Tous ces atouts font de lui un langage très populaires (3° place au moment ou nous parlons), surtout auprès des universitaires qu'ils l'on largement utilisé pour développer des outils dans le domaine de le la data science et de l'intelligence artificielle.  
 C'est un langage incontournable dans ces 2 domaines aujourd'hui mais il est également largement utilisé dans les domaines du web, du jeu vidéo, de la robotique et de l'IOT.
 
-### LES VERSION DE PYTHON
+### LES VERSIONS DE PYTHON
 
 La dernière version au moment ou nous parlons est la 3.9 (latest) mais elle est plutôt envisagé en mode dev.
 
@@ -19,12 +19,12 @@ Les versions préférées pour leur stabilité (prod) sont la 3.7 ou la 3.6.
 
 La version 2.7 qui a été préférée pendant (très) longtemps par les développeur pour sa formidable stabilité est en déprécated et doit être évitée.
 
-Toutes ces version de python sont disponibles en téléchargement [ici](https://www.python.org/downloads/)
+Toutes ces version de python sont disponibles en téléchargement [ici](https://www.python.org/downloads/)  
 Pour Linux ces versions sont également disponibles sur les dépot apt, yum ...
 
 ### ECRIRE DU CODE PYTHON
 
-#### DANS LA CONSOLE
+#### DANS LA CONSOLE
 
 Après installation, la console python est disponible via la commande `python` ou `python3` dans le terminal
 
@@ -42,7 +42,7 @@ hello world
 
 #### DANS UN FICHIER
 
-On peut (doit) intégrer notre code dans un fichier portant l'extension `.py` (par convention)
+On peut (doit) intégrer notre code dans un fichier portant l'extension `.py` (par convention)  
 On peut ensuite l'exécuter en lancant la commande `python mon_fichier.py`
 
 * Ecrire dans hello.py
@@ -83,9 +83,9 @@ ma_var = 0b110 # int 6
 ma_var = 0xFF # int 255
 ```
 
-#### CARATERES ET STRING
+#### CARATERES ET STRING
 
-La valeur des chaines de caractères sont déclaré entre " ou ' (pour sigle lines).
+La valeur des chaines de caractères sont déclaré entre " ou ' (pour sigle lines).  
 On peut déclarer une chaine multiline entre triple quote `"""`.
 
 ```python
@@ -124,9 +124,9 @@ On utilise le mot clé ***None*** pour définir une variable sans valeur.
 ma_var=None
 ```
 
-#### LES CONTAINERS
+#### LES CONTAINERS
 
-En programmation, les containers sont des objets pouvant contenir une suite d'éléments.
+En programmation, les containers sont des objets pouvant contenir une suite d'éléments.  
 Le typage dynamique fort de python nous permet d'intégrer dans ces container tous types de variables et faire cotoyer des variables de types différents.
 
 En python, il existe en natif 4 types de containers intégrés en natif :
@@ -136,7 +136,7 @@ En python, il existe en natif 4 types de containers intégrés en natif :
 * les set : objet ***set***
 * les dictionnaires : objet ***dict***
 
-##### LES LISTES
+##### LES LISTES
 
 L'objet **list** permet de contenir une série d'éléments dans une ordre défini.
 
@@ -146,7 +146,7 @@ print(ma_list)
 # [1,2,'trois']
 ```
 
-Les listes sont modifiables et extensibles.
+Les listes sont modifiables et extensibles.  
 On accède à un élément d'une liste en utilisant son index.
 
 ```python
@@ -197,9 +197,9 @@ print(a)
 # [4, 3, 2, 1]
 ```
 
-##### LES TUPLES
+##### LES TUPLES
 
-Le ***tuple*** permet contenir un série d'éléments dans un ordre défini.
+Le ***tuple*** permet contenir un série d'éléments dans un ordre défini.  
 Comme les listes, les éléments d'un tuples sont également accessible avec son index et une plage d'index permet de récupérer une partie du tuple.
 
 Mais contrairement aux listes, les tuples ne sont pas modifiables.
@@ -215,7 +215,7 @@ a[1] = 'obi' # on essai de remplacer l'élément à l'index 1
 # TypeError: 'tuple' object does not support item assignment
 ```
 
-##### LES RANGES
+##### LES RANGES
 
 Les ranges représentent une suite de nombre ordonnée définie par 
 * une valeur de début
@@ -238,7 +238,7 @@ print(list(range))
 
 ##### LES SET
 
-Les ***set*** sont conçu pour contenir une serie d'éléments uniques.
+Les ***set*** sont conçu pour contenir une serie d'éléments uniques.  
 contrairement au objets ***list*** et ***tuple***, un objet ***set*** n'est pas ***subscriptable*** (on ne peut pas accéder aux élément via un index).
 
 ```python
@@ -265,9 +265,9 @@ print(a)
 
 ##### LES DICTIONNAIRES
 
-Les ***dict*** permettent de stocker des éléments au format ***clé : valeur***.
-Les valeurs du ***dict** sont accessibles en utilisant la clé.
-Chaque clés du dictionnaire doit être unique.
+Les ***dict*** permettent de stocker des éléments au format ***clé : valeur***.  
+Les valeurs du ***dict** sont accessibles en utilisant la clé.  
+Chaque clés du dictionnaire doit être unique.  
 On peut également ajouter un nouvel ensemble ***clé : valeur*** en utilisant la formulation `mon_dict[clé] = valeur`.
 
 
@@ -305,9 +305,9 @@ print(b)
 # bravo
 ```
 
-##### LES ITERABLES
+##### LES ITERABLES
 
-Tous les objets de container vu précédemment sont des ***iterables***.
+Tous les objets de container vu précédemment sont des ***iterables***.  
 Les ***itérables*** sont des objets de type container dans lequels sont implémenté des fonctions spécifique qui vont permettre :
 * de le parcourir via une boucle ***for***.
 * d'accéder à un éléments via son index.
@@ -344,7 +344,7 @@ type(ma_var)
 
 ### FONCTIONS DE CONVERSION : CAST 
 
-#### FONCTION INT()
+#### FONCTION INT()
 
 La fonction int permet de convertir une valeur de type float ou str en int.
 
@@ -357,7 +357,7 @@ int(a)
 
 * cast str => int
 
-La conversion de _string_ vers _int_ peut prendre un deuxième paramêtre décrivant la base de numérique (2, 10 ou 16).
+La conversion de _string_ vers _int_ peut prendre un deuxième paramêtre décrivant la base de numérique (2, 10 ou 16).  
 On peut donc convertir une représentation binaire, décimale ou héxadecimale au format string en int en définissant la base.
 Par défaut la base est 10.
 
@@ -382,7 +382,7 @@ int(a, 16)
 # 272
 ```
 
-#### FONCTION FLOAT()
+#### FONCTION FLOAT()
 
 La fonction float permet de convertir une valeur de type string ou int en float
 
@@ -401,7 +401,7 @@ float(a)
 # 6.7
 ```
 
-#### FONCTION STR()
+#### FONCTION STR()
 
 La fonction str() permet de convertir des valeur de type int ou float en string.
 
@@ -475,9 +475,9 @@ bin(a << 1) # decalage des bits vers la gauche 1 fois
 # '0b10100' = 20
 ```
 
-### L'IDENTATION
+### L'IDENTATION
 
-L'identation est une **grosse contrainte** imposée par python.
+L'identation est une **grosse contrainte** imposée par python.  
 Le code n'utilisant pas les accolades pour encadrer les fonction, les blocs conditionnels ou les boucles, **l'executeur utilise l'identation pour identifier le debut et la fin de ces éléments**. 
 
 ```python
@@ -494,7 +494,7 @@ print(...)
 
 #### BLOC IF
 
-Le bloc if permet d'exécuter un ensemble d'instruction si une condition est vérifiée.
+Le bloc if permet d'exécuter un ensemble d'instruction si une condition est vérifiée.  
 En python, le bloc **if...else** est formulé de la façon suivante:
 
 ```python
@@ -538,7 +538,7 @@ On utilises des opérateurs de conditions, des opérateurs logiques et des opér
 
 #### LES OPERATEURS DE CONDITION
 
-Les opérateur suivant sont utilisé pour définir une condition.
+Les opérateur suivant sont utilisé pour définir une condition.  
 On les utilise dans un bloc if pour comparer 2 valeurs.
 
 |opérateur|condition|utilisation|
@@ -583,7 +583,7 @@ if condition1 or condition2:
     print('conditions1 ou condition2 réunie')
 ```
 
-#### LES OPERATEURS D'APPARTENANCE
+#### LES OPERATEURS D'APPARTENANCE
 
 Les opérateurs d"appartenances permettent de contrôler la présence d'un élément dans une collection (list, tuple, set et dict ...).
 
@@ -608,12 +608,12 @@ if 'alpha' in d.values()):
 
 ```
 
-### LES BOUCLES
+### LES BOUCLES
 
-#### BOUCLE FOR
+#### BOUCLE FOR
 
-La boucle ***for*** est utilisée pour itérer dans une collection (list, tuple, set, dict...).
-Elle permet d'exécuter un ensemble d'instrucion pour chaque élément de la collection.
+La boucle ***for*** est utilisée pour itérer dans une collection (list, tuple, set, dict...).  
+Elle permet d'exécuter un ensemble d'instrucion pour chaque élément de la collection.  
 
 ```python
 
@@ -658,9 +658,9 @@ for (index, element) in enumerate(l): # enumerate renvoi un tuple (index, valeur
 # 2 charlie
 ```
 
-#### LA BOUCLE WHILE
+#### LA BOUCLE WHILE
 
-La boucle ***while*** permet d'executer une série d'instruction un nombre défini tant qu'une condition est vérifiée.
+La boucle ***while*** permet d'executer une série d'instruction un nombre défini tant qu'une condition est vérifiée.  
 Dès que la condition n'est plus vérifiée, le programme sort de la boucle.
 
 ```python
@@ -701,9 +701,9 @@ else:
 # fin de la boucle
 ```
 
-### LES OPERATIONS SUR LES STRING
+### LES OPERATIONS SUR LES STRING
 
-#### CONCATENATION
+#### CONCATENATION
 
 On peut concaténer plusieurs chaines de caractères en utilisant l'opérateur `+`.
 
@@ -714,8 +714,8 @@ c='world'
 print(a+b+c)
 ```
 
-Cet opérateur ne fonctionne uniquement pour concaténer des chaines de caractère entre elles.
-Pour concaténer une chaine avec une variable d'un autre type, on doit passer par une phase de **cast** avec la fonction **str()** ou par du tring formating.
+Cet opérateur ne fonctionne uniquement pour concaténer des chaines de caractère entre elles.  
+Pour concaténer une chaine avec une variable d'un autre type, on doit passer par une phase de **cast** avec la fonction **str()** ou par du tring formating.  
 
 ```python
 a='hello'
@@ -775,11 +775,11 @@ d
 """
 ```
 
-> **Attention** : les modification de la chaine en utilisant la formulation `ma_string[1]="a'` est interdite.
-> Les méthodes de ***list*** ne sont pas applicable sur un objet string, il utilise ses propres méthodes.
+> **Attention** : les modification de la chaine en utilisant la formulation `ma_string[1]="a'` est interdite.  
+> Les méthodes de ***list*** ne sont pas applicable sur un objet string, il utilise ses propres méthodes.  
 
 
-##### METHODES DE STRING
+##### METHODES DE STRING
 
 L'objet string possède une serie de méthodes pour :
 * les modifications : upper(), lower(), replace()...
@@ -803,14 +803,14 @@ a.split(":") # sépare la chaine en utilisant le caractere : et renvoi une list
 
 ```
 
-#### STRING FORMATING
+#### STRING FORMATING
 
-Le string formating permet d'intégrer des variables dans une chaine de caractère.
+Le string formating permet d'intégrer des variables dans une chaine de caractère.  
 En python, 2 formulations sont possibles:
     * en utilisant la méthode .format() de l'objet string. 
     * en utilisant le string formating opérator `%` : `"ma chaine et variable %d et ma variable %s"%(a, b)`
 
-##### METHODE FORMAT
+##### METHODE FORMAT
 
 On déclare les variables entre {} dans notre chaine et on applique la méthode format sur la chaine.
 
@@ -828,7 +828,7 @@ print("ma chaine et variable {c} et ma variable {d:.2f}".format(c="hello", d=5.4
 
 Il existe plusieurs opérateur de formatting, une liste est dispo [ici](https://www.w3schools.com/python/ref_string_format.asp)
 
-##### OPERATEUR %
+##### OPERATEUR %
 
 On déclare les variables avec le code `%<type_conversion>` dans la chaine et on applique l'opérateur % sur la chaine.
 Chaque type est représenté par un code (string : %s, int; %i ...)
@@ -856,9 +856,9 @@ print("ma chaine et variable %.2f et ma variable %s"%(a, b))
 
 ### LES FONCTIONS
 
-#### DEFINITION/APPEL
+#### DEFINITION/APPEL
 
-En python, les bloc fonction sont déclaré par le mot clé `def` suivit du nom de la fonction et des paramètre entre parenthèse (ou parenthèse vide si aucun paramètre).
+En python, les bloc fonction sont déclaré par le mot clé `def` suivit du nom de la fonction et des paramètre entre parenthèse (ou parenthèse vide si aucun paramètre).  
 On peut ensuite l'utiliser en utilisant l'appelant par son nom dans la suite du code.  
 Comme les bloc ***if*** ou ***for***, le respect de l'identation est très importante.  
 
@@ -886,9 +886,9 @@ ma_fonction()
 
 #### LES ARGUMENTS
 
-Les arguments sont définis entre parenthèse lors de l'appel de la fonction.
-Il n'éxiste aucune restriction sur le type de l'argument en Python.
-Contrairement à javascript, par défaut, chaque argument défini doit obligatoirement avoir une valeur attribuée lors de l'appel de la fonction.
+Les arguments sont définis entre parenthèse lors de l'appel de la fonction.  
+Il n'éxiste aucune restriction sur le type de l'argument en Python.  
+Contrairement à javascript, par défaut, chaque argument défini doit obligatoirement avoir une valeur attribuée lors de l'appel de la fonction.  
 
 ```python
 
@@ -901,7 +901,7 @@ create_session('florent', 'dubois') # OK
 create_session('florent') # Error
 ```
 
-On peut définir une valeur par défaut pour les arguments lors de la définition de la fonction en utlisant la formulation `argument=valeur`.
+On peut définir une valeur par défaut pour les arguments lors de la définition de la fonction en utlisant la formulation `argument=valeur`.  
 Si une valeur est définie lors de l'appel, la valeur par défaut est remplacée.
 
 ```python
@@ -927,7 +927,7 @@ create_session(lname='dubois', fname='florent') # OK
 
 #### ARBITRARY ARGUMENTS
 
-Lors de la définition de la fonction, l'opérateur `*` nous permet de passer des arguments sans en définir le nombre.
+Lors de la définition de la fonction, l'opérateur `*` nous permet de passer des arguments sans en définir le nombre.  
 L'argument taggé avec `*` peut ensuite être utilisé comme un objet ***list*** dans la fonction.
 
 ```python
@@ -956,7 +956,7 @@ print_format_user(fname="florent", lname="dubois", age="34")
 
 ### ENTREE UTILISATEURS
 
-La fonction native ***input()*** va nous permettre d'interagir avec l'utilisateur dans le terminal.
+La fonction native ***input()*** va nous permettre d'interagir avec l'utilisateur dans le terminal.  
 Elle prend en paramêtre le message à afficher et retourne la chaine de caractères entrée par l'utilisateur.
 
 ```python
