@@ -53,15 +53,6 @@ On lance l'outil de jupyter notebook avec la commande suivante:
 jupyter notebook
 ```
 
-Cette commande lance une web application et ouvre la page suivante :
-
-![notebook](media/notebook.png)
-
-Nouveau notebook créé:
-
-![notebook](media/notebook2.png)
-
-
 #### CONDA
 
 Conda est un système open source de gestion d'environnement et de gestion de paquets.  
