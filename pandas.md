@@ -1,19 +1,19 @@
 ## INTRODUCTION A PANDAS
 
-### INTRODUCTION
+### INTRODUCTION
 
 Pandas est une librairie python célèbre dans le domaine de la datascience.
 Elle est spécialisé dans la gestion, l'analyse et la manipulation des données.
 Il est utilisé dans (presque) tous les data-pipelines réalisé en python.
 
-### ENVIRONNEMENT DATA-SCIENCE
+### ENVIRONNEMENT DATA-SCIENCE
 
 Anaconda (ou Miniconda dans sa version plus légère) est une distribution libre et open source dédiée à la programmation Python et R.  
 Elle est très utilisée dans la science des données, machine Learning et l’intelligence artificielle.
 
 Cette distribution est devenue indispensable pour n’importe quel développeur dans le domaine de la data science pour sa richesse en modules et librairies de la data science mais aussi pour les outils fournie dans sa distribution (spyder, jupyter, conda ...)!
 
-#### INSTALLATION DE MINICONDA
+#### INSTALLATION DE MINICONDA
 
 Miniconda est disponible au liens suivants : 
 * [raspberry pi](http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh)
@@ -87,9 +87,9 @@ Ces environnements multiples permettent de tester un code dans des configuration
 
 La commande `conda` permet de créér et supprimer ces environnements rapidement et facilement.
 
-##### MANIPULER LES ENVIRONNEMENTS
+##### MANIPULER LES ENVIRONNEMENTS
 
-###### CREATION
+###### CREATION
 
 Creation d'un environnement nommé ***python2_env*** avec la ***version 2*** de python :
 
@@ -100,7 +100,7 @@ On intégre l'installation des paquet ***ipykernel*** et ***pandas*** pendant la
 
 `conda create --name python3_env python=3 ipykernel pandas`
 
-###### LISTER LES ENVIRONNEMENT
+###### LISTER LES ENVIRONNEMENT
 
 La commande `conda info --env` permet de lister les environnement et leur path
 
@@ -111,14 +111,14 @@ En fonction de l'OS (et de la version de conda) une des commande suivante permet
 * `activate nom_environnement`
 * `conda activate nom_environnement`
 
-###### SORTIR D'UN ENVIRONNEMENT
+###### SORTIR D'UN ENVIRONNEMENT
 
 En fonction de l'OS (et de la version de conda) une des commande suivante permet de switcher entre les environnement:
 * `source deactivate` 
 * `deactivate`
 * `conda deactivate`
 
-#### LES KERNELS JUPYTER
+#### LES KERNELS JUPYTER
 
 Jupyter peut de programmer en plus de 40 langages grâce à un systeme de Kernel.
 Les kernels sont des environnements d'execution, ce sont eux qui exécute le code intégré dans le notebook pour lui renvoyer le résultat.
@@ -126,7 +126,7 @@ Les kernels sont des environnements d'execution, ce sont eux qui exécute le cod
 Donc pour chacun des environnement créé, on va pouvoir créé un kernel IPython pour l'associer à jupyter notebook.
 Ces kernels vont nous permettre d'executer notre code python dans chacun des environnements.
 
-##### IPYKERNEL
+##### IPYKERNEL
 
 Pour lié créer un kernel lié à notre environnement et l'associer à Jupyter, on utilise le module ***ipykernel***.
 
@@ -137,7 +137,7 @@ source activate python3_env #active le virtual env
 conda install ipykernel # installation de ipykernel dans le virtual env
 ```
 
-##### ASSOCIER LE KERNEL AU NOTEBOOK
+##### ASSOCIER LE KERNEL AU NOTEBOOK
 
 On utilise le module ***ipykernel*** installé pour lié notre environnement au notebook.
 
@@ -158,7 +158,7 @@ jupyter kernelspec list
 
 ```
 
-### LA BIBLIOTHEQUE PANDAS
+### LA BIBLIOTHEQUE PANDAS
 
 La bibliothèque pandas est spécialisé dans l'analyse et la manipulation de large volume de données.
 Elle simplifie des opérations complexes telle que :
@@ -182,7 +182,7 @@ Maintenant que la librairie pandas est installé, on peut l'importer dans notre 
 
 ![import_pandas](media/import_panda.png)
 
-#### LES OBJETS DE PANDAS
+#### LES OBJETS DE PANDAS
 
 Pour la manipulation de données Pandas se repose sur 2 composantes essentielles :
 * les ***pandas.Series***
@@ -197,7 +197,7 @@ Les ***pandas.Dataframes*** sont des tableau bidimensionnel avec un label pour c
 
 La relation entre les ***Series*** et les ***Dataframes*** est étroite car un ***Dataframe*** peut être considéré comme un ensembles de ***Series***.
 
-### LES PANDAS SERIES
+### LES PANDAS SERIES
 
 #### CREER DES SERIES
 
@@ -249,12 +249,12 @@ Name: first_serie, dtype: int64
 """
 ```
 
->La définission du nom et de l'index de la serie peut aussi se faire après son instantation en redéfinissant les arguments _index_ et _name_ ou les fonctions _reindex()_ et _rename()_
+> La définission du nom et de l'index de la serie peut aussi se faire après son instantation en redéfinissant les arguments _index_ et _name_ ou les fonctions _reindex()_ et _rename()_
 >
->```python
->pds.name = "first_serie" # ou pds.rename("first_serie")
->pds.index = ['a','b','c','d','e','f','g','h','i','j'] # ou pds.reindex(...)
->```
+> ```python
+> pds.name = "first_serie" # ou pds.rename("first_serie")
+> pds.index = ['a','b','c','d','e','f','g','h','i','j'] # ou pds.reindex(...)
+> ```
 
 L'objet Series peut prendre un dictionnaire en paramêtre.  
 Dans cette configuration, il utilise les clés du dictionnaire comme index.
@@ -290,7 +290,7 @@ dtype: int64
 
 On peut également reconvertir une serie en dictionnaire ou en list avec les méthode ***to_list()*** et ***to_dict()***.
 
-#### PANDAS ET NUMPY
+#### PANDAS ET NUMPY
 
 Dans son fonctionnement internet, Pandas se base en grande partie sur une autre librairie spécialisé dans la datascience : ***Numpy***.
 Sa relation avec Numpy est tellement étroite qu'on peut :
@@ -327,7 +327,7 @@ print(narr)
 # array([ 2.,  4., nan, inf])
 ```
 
-#### LES METHODES ET PROPRIETES DE SERIES
+#### LES METHODES ET PROPRIETES DE SERIES
 
 L'objet Series de pandas comporte un ensemble de méthodes et de propriétés qui vont nous permettre d'analyser les informations contenues dans la Series et de les modifiet er suivant le besoin. 
 
@@ -461,7 +461,7 @@ print(s.dtype)
 # dtype('float64')
 ```
 
-##### Trier les valeurs
+##### Trier les valeurs
 
 La méthodes _sort\_values()_ renvoi une copie de la Series avec les valeurs triées
 La méthode _sort\_index()_ renvoi une copie de la Series avec les index triés.
@@ -507,7 +507,6 @@ print(s_sortedIndexes)
 Name: score, dtype: float64
 """
 ```
-
 ##### Renvoyer une valeurs ciblées
 
 Je peux récupérer **une** valeurs de la serie en utilisant :
@@ -601,7 +600,7 @@ Name: score, dtype: float64
 
 > ATTENTION : La formulation simple `s[2:6]` existe aussi mais elle est ambigüe si le label est numérique car elle utilise le label si il existe sinon l'item.
 
-##### Boucler sur une Series
+##### Boucler sur une Series
 
 Par défaut, boucle ***for*** appliqué sur une Series permet de renvoyer chaque valeur de la serie indépendement.
 Pour boucler sur l'index, on utilise la propriété ***index*** de la Series.
@@ -693,7 +692,7 @@ Name: score, dtype: float64
 """
 ```
 
-* **Operation d'apartenance (in) sur les valeurs/index :**
+* **Operation d'appartenance (in) sur les valeurs/index :**
 
 La fonction isin() permet de renvoyer les éléments dont ***les valeurs*** sont contenus dans une liste.
 Comme précédement, on peut l'appliquer sur l'index pour récupérer les valeurs d'index contenu dans la liste.
@@ -851,7 +850,7 @@ Name: score, dtype: float64
 """
 ```
 
-* **Operation sur les chaine de caractère :**
+* **Operation sur les chaines de caractère :**
 
 En passant par l'attribut ***str*** d'une Series, on peut effectuer des opérations ou tester des conditions sur des chaines de caractères.
 
@@ -1115,7 +1114,7 @@ Name: score, dtype: object
 
 ### LES PANDAS DATAFRAMES
 
-#### CREER DES DATAFRAMES
+#### CREER DES DATAFRAMES
 
 * **From scratch :**
 
@@ -1316,6 +1315,10 @@ La méthode ***pop()*** permet de renvoyer la colonne supprimée dans une variab
 ```python
 pays_pp_series = df.pop('pays_plus_plus')
 ```
+
+##### MODIFIER LE NOM DES COLONNES
+
+On peut modifier le nom des colonne via l'attribut ***columns*** du Dataframe souss le format : df.columns = [col1,col2,col3]
 
 #### LES METHODES ET PROPRIETES DE DATAFRAME
 
